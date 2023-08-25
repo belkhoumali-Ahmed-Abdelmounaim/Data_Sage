@@ -12,15 +12,15 @@ OPENAI_API_KEY = st.secrets['OPENAI_API_KEY']
 openai.api_key = OPENAI_API_KEY
 
 # Set page configuration and title for Streamlit
-st.set_page_config(page_title="csvGPT", page_icon="📄", layout="wide")
+st.set_page_config(page_title="DataSage", page_icon="🔮", layout="wide")
 
 # Add header with title and description
 st.markdown(
-    '<p style="display:inline-block;font-size:40px;font-weight:bold;">📊csvGPT </p>'
-    ' <p style="display:inline-block;font-size:16px;">csvGPT is tool that uses AI-powered '
-    'natural language processing to analyze and provide insights on CSV data. Users can '
-    'upload CSV files, view the data, and have interactive conversations with the AI model '
-    'to obtain valuable information and answers related to the uploaded data <br><br></p>',
+    '<div style="text-align:center;">'
+    '<p style="font-size:40px;font-weight:bold;color:#5C4DB1;">🔮 DataSage </p>'
+    '<p style="font-size:18px;color:#888888;">Unravel the mysteries of your CSV data with the power of AI. '
+    'Simply upload, ask, and let DataSage provide insights.</p>'
+    '</div>',
     unsafe_allow_html=True
 )
 
@@ -28,28 +28,31 @@ def chat_with_csv(df, prompt):
     llm = OpenAI(api_token=OPENAI_API_KEY)
     pandas_ai = PandasAI(llm)
     result = pandas_ai.run(df, prompt=prompt)
-    print(result)
     return result
 
-input_csv = st.file_uploader("Upload your CSV file", type=['csv'])
+# Create a container for the file uploader and chat
+container = st.container()
 
-if input_csv is not None:
-    col1, col2 = st.columns([1, 1])
+with container:
+    st.markdown('<div style="border: 2px solid #E0E0E0; border-radius: 10px; padding: 20px;">', unsafe_allow_html=True)
+    input_csv = st.file_uploader("📤 Upload your CSV file", type=['csv'])
 
-    with col1:
-        st.info("CSV Uploaded Successfully")
-        data = pd.read_csv(input_csv)
-        st.dataframe(data, use_container_width=True)
+    if input_csv is not None:
+        col1, col2 = st.columns([1, 1])
 
-    with col2:
-        st.info("Chat Below")
-        input_text = st.text_area("Enter your query")
+        with col1:
+            st.info("📄 Preview of Uploaded CSV")
+            data = pd.read_csv(input_csv)
+            st.dataframe(data)
 
-        if input_text is not None:
-            if st.button("Chat with CSV"):
-                st.info("Your Query: " + input_text)
+        with col2:
+            st.markdown("## 🤖 Chat with DataSage")
+            input_text = st.text_area("What would you like to know?", height=100)
+            if st.button("Ask DataSage"):
+                st.info(f"Your Query: *{input_text}*")
                 result = chat_with_csv(data, input_text)
                 st.success(result)
+    st.markdown('</div>', unsafe_allow_html=True)
 
 # Hide Streamlit header, footer, and menu
 hide_st_style = """
