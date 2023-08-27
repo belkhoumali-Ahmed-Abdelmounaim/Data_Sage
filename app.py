@@ -12,8 +12,9 @@ matplotlib.use('TkAgg')
 # Get API key
 #OPENAI_API_KEY = st.secrets['OPENAI_API_KEY']
 
+OPENAI_API_KEY= "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"
 # Set OpenAI API key
-openai.api_key = "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"
+openai.api_key = "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"
 
 llm = OpenAI(api_token=OPENAI_API_KEY)
 
