@@ -1,5 +1,6 @@
 # Upgrade pip
 pip>=23.0
+beautifulsoup4
 
 # Other packages
 streamlit
