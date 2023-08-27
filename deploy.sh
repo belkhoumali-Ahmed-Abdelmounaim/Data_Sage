@@ -9,4 +9,4 @@ git add .
 
 git commit -m "Updates"
 
-git push
+git push -u origin main 
