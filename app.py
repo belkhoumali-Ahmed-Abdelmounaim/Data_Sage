@@ -10,11 +10,10 @@ from pandasai import SmartDataframe
 matplotlib.use('TkAgg')
 
 # Get API key
-#OPENAI_API_KEY = st.secrets['OPENAI_API_KEY']
+OPENAI_API_KEY = st.secrets['OPENAI_API_KEY']
 
-OPENAI_API_KEY= "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"
 # Set OpenAI API key
-openai.api_key = "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"
+openai.api_key = OPENAI_API_KEY
 
 llm = OpenAI(api_token=OPENAI_API_KEY)
 
