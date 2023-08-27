@@ -4,6 +4,10 @@ import pandas as pd
 from pandasai import PandasAI
 from pandasai.llm.openai import OpenAI
 import openai
+import matplotlib
+from pandasai import SmartDataframe
+
+matplotlib.use('TkAgg')
 
 # Get API key
 OPENAI_API_KEY = st.secrets['OPENAI_API_KEY']
@@ -11,7 +15,9 @@ OPENAI_API_KEY = st.secrets['OPENAI_API_KEY']
 # Set OpenAI API key
 openai.api_key = OPENAI_API_KEY
 
-# Set page configuration and title for Streamlit
+llm = OpenAI(api_token=OPENAI_API_KEY)
+
+# Set page configuration and title ofor Streamlit
 st.set_page_config(page_title="DataSage", page_icon="🔮", layout="wide")
 
 # Add header with title and description
@@ -26,9 +32,15 @@ st.markdown(
 
 def chat_with_csv(df, prompt):
     llm = OpenAI(api_token=OPENAI_API_KEY)
-    pandas_ai = PandasAI(llm)
+    """pandas_ai = PandasAI(llm)
     result = pandas_ai.run(df, prompt=prompt)
+    print(type(result))
+    print(result)
+    return result"""
+    result=df.chat(prompt)
+    #print(result)
     return result
+
 
 # Create a container for the file uploader and chat
 container = st.container()
@@ -43,15 +55,35 @@ with container:
         with col1:
             st.info("📄 Preview of Uploaded CSV")
             data = pd.read_csv(input_csv)
+            data = SmartDataframe(data, config={"llm": llm})
+
             st.dataframe(data)
+
+# ... [Your previous code]
 
         with col2:
             st.markdown("## 🤖 Chat with DataSage")
             input_text = st.text_area("What would you like to know?", height=100)
             if st.button("Ask DataSage"):
-                st.info(f"Your Query: *{input_text}*")
-                result = chat_with_csv(data, input_text)
-                st.success(result)
+                if input_text:  # Check if the prompt is not empty
+                    st.info(f"Your Query: *{input_text}*")
+                    with st.spinner("Generating response..."):  # Add a spinner
+                        
+                        result = chat_with_csv(data, input_text)
+                                                # Check the type of the result and display accordingly
+                        if isinstance(result, pd.DataFrame):
+                            st.dataframe(result)
+                        elif isinstance(result, list):
+                            st.success(' '.join(map(str, result)))
+                        else:
+                            st.success(result)
+
+
+                else:
+                    st.warning("Please enter a prompt.")  # Warning message for empty prompt
+
+        # ... [Rest of your code]
+
     st.markdown('</div>', unsafe_allow_html=True)
 
 # Hide Streamlit header, footer, and menu
