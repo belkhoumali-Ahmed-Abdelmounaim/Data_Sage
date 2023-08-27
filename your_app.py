@@ -6,8 +6,9 @@ from pandasai.llm.openai import OpenAI
 import openai
 import matplotlib
 from pandasai import SmartDataframe
+pd.options.plotting.backend = "plotly"
 
-matplotlib.use('Agg')
+#matplotlib.use('Agg')
 
 # Get API key
 OPENAI_API_KEY = st.secrets['OPENAI_API_KEY']
