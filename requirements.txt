@@ -2,3 +2,4 @@ streamlit
 pandasai
 python-dotenv
 altair<5
+pip install --upgrade pip
