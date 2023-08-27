@@ -15,3 +15,5 @@
 'User: give me distributiion of 9597ada57d31cb0cc9cf4803e680d396df2d0836243693d79c6ed890fc1add4a3', (17920, 1353)
 'User: give me distributiion of col 9597ada57d31cb0cc9cf4803e680d396df2d0836243693d79c6ed890fc1add4a3', (19456, 1100)
 'User: give me distributiion plot  of col 9597ada57d31cb0cc9cf4803e680d396df2d0836243693d79c6ed890fc1add4a3', (20992, 1151)
+'User: max of column 2597ada57d31cb0cc9cf4803e680d396df2d0836243693d79c6ed890fc1add4a3', (22528, 940)
+'User: plot of column 2597ada57d31cb0cc9cf4803e680d396df2d0836243693d79c6ed890fc1add4a3', (23552, 1283)
