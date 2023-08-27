@@ -2,6 +2,7 @@
 pip>=23.0
 
 # Other packages
+streamlit_option_menu
 streamlit
 pandasai
 python-dotenv
