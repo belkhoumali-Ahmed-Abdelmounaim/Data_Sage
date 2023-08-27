@@ -1,7 +1,9 @@
+# Upgrade pip
+pip>=23.0
+
+# Other packages
 streamlit
 pandasai
 python-dotenv
 altair<5
-pip install pip
-#/opt/render/project/src/.venv/bin/python -m pip install --upgrade pip
 
