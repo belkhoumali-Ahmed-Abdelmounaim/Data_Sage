@@ -1,9 +1,8 @@
 # Upgrade pip
-pip>=23.0
 
 # Other packages
 streamlit_option_menu
-streamlit
+streamlit=1.12.0
 pandasai
 python-dotenv
 altair<5
