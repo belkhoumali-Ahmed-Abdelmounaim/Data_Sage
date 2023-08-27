@@ -3,7 +3,6 @@
 # Other packages
 streamlit_option_menu
 streamlit<1.10.0
-pandasai
 python-dotenv
 altair<5
 
