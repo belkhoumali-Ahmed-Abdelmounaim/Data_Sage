@@ -3,5 +3,5 @@ pandasai
 python-dotenv
 altair<5
 pip install pip
-/opt/render/project/src/.venv/bin/python -m pip install --upgrade pip
+#/opt/render/project/src/.venv/bin/python -m pip install --upgrade pip
 
