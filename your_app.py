@@ -6,9 +6,9 @@ from pandasai.llm.openai import OpenAI
 import openai
 import matplotlib
 from pandasai import SmartDataframe
-pd.options.plotting.backend = "plotly"
+#pd.options.plotting.backend = "plotly"
 
-#matplotlib.use('Agg')
+matplotlib.use('TkAgg')
 
 # Get API key
 OPENAI_API_KEY = st.secrets['OPENAI_API_KEY']
@@ -33,14 +33,14 @@ st.markdown(
 
 def chat_with_csv(df, prompt):
     llm = OpenAI(api_token=OPENAI_API_KEY)
-    pandas_ai = PandasAI(llm)
-    result = pandas_ai.run(df, prompt=prompt)
+    #pandas_ai = PandasAI(llm)
+    #result = pandas_ai.run(df, prompt=prompt)
     #print(type(result))
     #print(result)
-    return result
-    #result=df.chat(prompt)
-    #print(result)
     #return result
+    result=df.chat(prompt)
+    #print(result)
+    return result
 
 
 # Create a container for the file uploader and chat
@@ -56,7 +56,7 @@ with container:
         with col1:
             st.info("📄 Preview of Uploaded CSV")
             data = pd.read_csv(input_csv)
-            #data = SmartDataframe(data, config={"llm": llm})
+            data = SmartDataframe(data, config={"llm": llm})
             st.dataframe(data)
 
 # ... [Your previous code]
