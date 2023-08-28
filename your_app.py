@@ -5,6 +5,8 @@ from pandasai import PandasAI
 from pandasai.llm.openai import OpenAI
 import openai
 import matplotlib
+import matplotlib.pyplot as plt
+
 from pandasai import SmartDataframe
 #pd.options.plotting.backend = "plotly"
 
@@ -75,6 +77,9 @@ with container:
                             st.dataframe(result)
                         elif isinstance(result, list):
                             st.success(' '.join(map(str, result)))
+                        elif isinstance(result, plt.Figure):
+                            st.pyplot(result)  # Check if result is a Matplotlib Figure
+
                         else:
                             st.success(result)
 
