@@ -77,11 +77,13 @@ with container:
                             st.dataframe(result)
                         elif isinstance(result, list):
                             st.success(' '.join(map(str, result)))
+                            print(result)
                         elif isinstance(result, plt.Figure):
-                            st.pyplot(result)  # Check if result is a Matplotlib Figure
-
+                            st.pyplot(result)
+                            print(result)  # Check if result is a Matplotlib Figure
                         else:
                             st.success(result)
+                            print(result)
 
 
                 else:
