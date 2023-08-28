@@ -33,12 +33,12 @@ st.markdown(
 
 def chat_with_csv(df, prompt):
     llm = OpenAI(api_token=OPENAI_API_KEY)
-    #pandas_ai = PandasAI(llm)
-    #result = pandas_ai.run(df, prompt=prompt)
+    pandas_ai = PandasAI(llm)
+    result = pandas_ai.run(df, prompt=prompt)
     #print(type(result))
     #print(result)
     #return result
-    result=df.chat(prompt)
+    #result=df.chat(prompt)
     #print(result)
     return result
 
@@ -56,7 +56,7 @@ with container:
         with col1:
             st.info("📄 Preview of Uploaded CSV")
             data = pd.read_csv(input_csv)
-            data = SmartDataframe(data, config={"llm": llm})
+            #data = SmartDataframe(data, config={"llm": llm})
             st.dataframe(data)
 
 # ... [Your previous code]

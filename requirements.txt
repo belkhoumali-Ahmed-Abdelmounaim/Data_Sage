@@ -2,7 +2,6 @@
 pip>=23.0
 beautifulsoup4
 plotly
-tkinter
 # Other packages
 streamlit
 pandasai
