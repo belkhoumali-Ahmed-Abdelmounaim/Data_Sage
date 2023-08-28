@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 from pandasai import SmartDataframe
 #pd.options.plotting.backend = "plotly"
 
-matplotlib.use('TkAgg')
+matplotlib.use('WebAgg')
 
 # Get API key
 OPENAI_API_KEY = st.secrets['OPENAI_API_KEY']
