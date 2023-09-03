@@ -36,7 +36,7 @@ def check_hashes(password, hashed_text):
     return False
 
 
-matplotlib.use('TkAgg')
+matplotlib.use('Agg')
 
 # Streamlit Configuration
 st.set_page_config(page_title="DataSage", page_icon="🔮", layout="wide")
