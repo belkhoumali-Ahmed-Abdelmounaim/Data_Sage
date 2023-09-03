@@ -7,4 +7,9 @@ streamlit
 pandasai
 python-dotenv
 altair<5
+msal
+msal-streamlit-authentication
+streamlit-authenticator
+deta
+
 
