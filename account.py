@@ -99,7 +99,7 @@ def app():
     
     # Account dashboard
     if st.session_state.signout:
-        st.markdown('<div style="color: white;">Name: {st.session_state.username}</div>', unsafe_allow_html=True)
-        st.markdown('<div style="color: white;">Email ID: {st.session_state.useremail}</div>', unsafe_allow_html=True)
+        st.markdown('''<div style="color: white;">Name: {st.session_state.username}</div>''', unsafe_allow_html=True)
+        st.markdown('''<div style="color: white;">Email ID: {st.session_state.useremail}</div>''', unsafe_allow_html=True)
         st.button('Sign out', on_click=t)
 
