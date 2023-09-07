@@ -40,6 +40,7 @@ def app():
             margin: 4px;
             color: black !important;
         }
+        }
         </style>
     """, unsafe_allow_html=True)
 
