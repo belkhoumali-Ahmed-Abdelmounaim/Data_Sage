@@ -14,15 +14,35 @@ def app():
     st.markdown("""
         <style>
         [data-testid="stAppViewContainer"] > .main {
-            background: linear-gradient(90deg, #FF8C00 30%, #FFEE58 90%);
+            background: linear-gradient(90deg, #212E53 30%, #4A919E 90%);
+        }
+        .stTextInput > div > div > input {
+            color: black !important;
+        }
+        h1, h2, h3, h4, h5, h6, label, body, span, p, a {
+            color: white !important;
         }
         .icon {
             font-size: 1.5em;
             vertical-align: middle;
             margin-right: 10px;
+            color: white;
+        }
+        div.row-widget.stRadio > div {
+            flex-direction: row;
+            align-items: stretch;
+        }
+        div.row-widget.stRadio > div[role="radiogroup"] > label[data-baseweb="radio"] {
+            background-color: #9AC5F4;
+            padding-right: 10px;
+            padding-left: 4px;
+            padding-bottom: 3px;
+            margin: 4px;
+            color: black !important;
         }
         </style>
     """, unsafe_allow_html=True)
+
     
     # User icon at the top center
     st.markdown("""
@@ -78,6 +98,7 @@ def app():
     
     # Account dashboard
     if st.session_state.signout:
-        st.text('Name: ' + st.session_state.username)
-        st.text('Email ID: ' + st.session_state.useremail)
+        st.markdown(f'<span style="color: white;">Name: {st.session_state.username}</span>', unsafe_allow_html=True)
+        st.markdown(f'<span style="color: white;">Email ID: {st.session_state.useremail}</span>', unsafe_allow_html=True)
         st.button('Sign out', on_click=t)
+
