@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import matplotlib
 
 def app():
-    matplotlib.use('TkAgg')
+    matplotlib.use('Agg')
     
     st.markdown("""
         <style>
