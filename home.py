@@ -8,6 +8,8 @@ import matplotlib.pyplot as plt
 import matplotlib
 
 def app():
+    matplotlib.use('TkAgg')
+    
     st.markdown("""
         <style>
         [data-testid="stAppViewContainer"] > .main {

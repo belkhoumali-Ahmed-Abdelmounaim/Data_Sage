@@ -7,6 +7,10 @@ import about
 import account
 import time
 
+import warnings
+warnings.simplefilter("ignore", UserWarning)
+
+
 # Setting the page configuration with a custom title
 st.set_page_config(page_title="DataSage")
 

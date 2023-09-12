@@ -89,17 +89,17 @@ def app():
         if choice == 'Sign up':
             username = st.text_input("Enter your unique username")
             
-            if st.button(lable=':violet[Create my account]'):
+            if st.button('Create my account'):
                 user = auth.create_user(email=email, password=password, uid=username)
                 st.success('Account created successfully!')
                 st.markdown('Please login using your email and password')
                 st.balloons()
         else:
-            st.button(label=':violet[Login]', on_click=f)
+            st.button('Login', on_click=f)
     
     # Account dashboard
     if st.session_state.signout:
         st.markdown(f'<div style="color: white;">Name: {st.session_state.username}</div>', unsafe_allow_html=True)
         st.markdown(f'<div style="color: white;">Email ID: {st.session_state.useremail}</div>', unsafe_allow_html=True)
-        st.button(label=':violet[Sign out]', on_click=t)
+        st.button('Sign out', on_click=t)
 
