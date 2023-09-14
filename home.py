@@ -41,6 +41,9 @@ def app():
         llm = OpenAI(api_token=OPENAI_API_KEY)
         pandas_ai = PandasAI(llm)
         result = pandas_ai.run(df, prompt=prompt)
+        print("w hnaya" )
+        print(result)
+        #st.image(result.get('value'))
         return result
 
     # Displaying a subheader and a custom welcome message
@@ -86,9 +89,13 @@ def app():
                         st.info(f"Your Query: *{input_text}*")
                         with st.spinner("Generating response..."):
                             result = chat_with_csv(data, input_text)
+                            print("WLH HNA EMCHI N3ETIZ")
+                           # print(result['value'])
+                            print(result)
                             if isinstance(result, pd.DataFrame):
                                 st.dataframe(result)
                             else:
+                                st.image('exports/charts/temp_chart.png')
                                 st.success(result)
                     else:
                         st.warning("Please enter a prompt.")
