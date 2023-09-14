@@ -14,4 +14,3 @@ deta
 firebase_admin
 protobuf==3.20.0
 streamlit_option_menu
-tkinter
