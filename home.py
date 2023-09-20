@@ -91,7 +91,7 @@ def app():
                             result = chat_with_csv(data, input_text)
                             print("WLH HNA EMCHI N3ETIZ")
 
-                            fig = plot.gcf()
+                            fig = plt.gcf()
                             if fig.get_axes():
                                 st.pyplot(fig)
                             st.write(result)
