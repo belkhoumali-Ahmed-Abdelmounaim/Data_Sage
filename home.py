@@ -102,7 +102,7 @@ def app():
                             print(result)
                             if isinstance(result, pd.DataFrame):
                                 st.dataframe(result)
-                            elif isinstance(resut, (str, int, float)): 
+                            elif isinstance(result, (str, int, float)): 
                                 st.success(result)
                             else : 
                                 st.image('exports/charts/temp_chart.png')
