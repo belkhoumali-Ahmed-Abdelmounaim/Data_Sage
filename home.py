@@ -90,7 +90,15 @@ def app():
                         with st.spinner("Generating response..."):
                             result = chat_with_csv(data, input_text)
                             print("WLH HNA EMCHI N3ETIZ")
+
+                            fig = plot.gcf()
+                            if fig.get_axes():
+                                st.pyplot(fig)
+                            st.write(x)
+                            
                            # print(result['value'])
+
+                           
                             print(result)
                             if isinstance(result, pd.DataFrame):
                                 st.dataframe(result)
