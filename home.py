@@ -39,7 +39,7 @@ def app():
 
 
         llm = OpenAI(api_token=OPENAI_API_KEY)
-        pandas_ai = PandasAI(llm,save_charts_path="exports/charts/")
+        pandas_ai = PandasAI(llm,save_charts_path="exports/charts/temp_chart.png")
         result = pandas_ai.run(df, prompt=prompt)
         print("w hnaya" )
         print(result)
@@ -91,10 +91,10 @@ def app():
                             result = chat_with_csv(data, input_text)
                             print("WLH HNA EMCHI N3ETIZ")
 
-                            fig = plt.gcf()
-                            if fig.get_axes():
-                                st.pyplot(fig)
-                            st.write(result)
+                            #fig = plt.gcf()
+                            #if fig.get_axes():
+                            #    st.pyplot(fig)
+                            #st.write(result)
 
                            # print(result['value'])
 
