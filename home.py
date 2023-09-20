@@ -39,7 +39,7 @@ def app():
 
 
         llm = OpenAI(api_token=OPENAI_API_KEY)
-        pandas_ai = PandasAI(llm)
+        pandas_ai = PandasAI(llm,save_charts_path="exports/charts/")
         result = pandas_ai.run(df, prompt=prompt)
         print("w hnaya" )
         print(result)
