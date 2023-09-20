@@ -94,8 +94,8 @@ def app():
                             fig = plot.gcf()
                             if fig.get_axes():
                                 st.pyplot(fig)
-                            st.write(x)
-                            
+                            st.write(result)
+
                            # print(result['value'])
 
                            
