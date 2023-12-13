@@ -1,10 +1,14 @@
+
 import streamlit as st
 import pandas as pd
 from pandasai.llm.openai import OpenAI
+from pandasai.pandasai import PandasAI  # Add this import
 import openai
 import os
 import matplotlib.pyplot as plt
 import matplotlib
+
+
 
 def app():
     matplotlib.use('Agg')
