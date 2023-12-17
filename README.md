@@ -24,23 +24,8 @@ Yes, it's that simple and intuitive!
 
 ## 📬 Contact Us
 
-Have questions, suggestions, or feedback? We're all ears! Feel free to reach out to us at [datasage@example.com](mailto:datasage@example.com).
+Have questions, suggestions, or feedback? We're all ears! Feel free to reach out to us at pro.belkhoumali.mounaim@gmail.com
 
-## 🌐 Follow Us
-
-Stay in the loop with the latest features and updates by following us on our social media platforms:
-
-- [GitHub](your-github-url-here)
-- [Twitter](your-twitter-url-here)
-- [LinkedIn](your-linkedin-url-here)
-
-## License
-
-Specify the type of license your project uses (e.g., MIT, GPL, etc.). It is important to have a license to let others know what they can and cannot do with your code and project.
-
-## Contributing
-
-If you are open to contributions from the community, provide guidelines on how one can do so. Also, make a mention of the kind of contributions you are looking for.
 
 ---
 
