@@ -1,4 +1,10 @@
-deploy.bat
-deploy.sh
+#firebase configurations
 secrets.json
-user_data.db
+
+# cache files
+__pycache__/
+
+# configuration files
+.vscode/
+
+cache/
