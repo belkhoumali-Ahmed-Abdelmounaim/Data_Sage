@@ -4,7 +4,9 @@ Welcome to DataSage, your go-to platform for unraveling the deep secrets lying i
 
 ## 🤔 What is DataSage?
 
-DataSage is an AI-driven tool designed to help users analyze and extract insights from their CSV data files effortlessly. Just upload your CSV file, and start a chat with DataSage. Ask questions, get predictions, and explore your data like never before!
+DataSecho. 2>.gitignore
+
+age is an AI-driven tool designed to help users analyze and extract insights from their CSV data files effortlessly. Just upload your CSV file, and start a chat with DataSage. Ask questions, get predictions, and explore your data like never before!
 
 ## 🛠 How it Works
 

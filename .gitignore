@@ -1,0 +1,4 @@
+deploy.bat
+deploy.sh
+secrets.json
+user_data.db
