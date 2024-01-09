@@ -5,7 +5,7 @@ import home
 import about
 import account
 import time
-
+from streamlit_option_menu import option_menu
 import warnings
 warnings.simplefilter("ignore", UserWarning)
 
