@@ -1,5 +1,4 @@
 import streamlit as st
-from streamlit_option_menu import option_menu
 
 # Importing the modules representing different sections of your app
 import home
