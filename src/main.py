@@ -7,6 +7,7 @@ import account
 import time
 from streamlit_option_menu import option_menu
 import warnings
+from pandasai import PandasAI
 warnings.simplefilter("ignore", UserWarning)
 
 
