@@ -7,7 +7,7 @@ import os
 import matplotlib.pyplot as plt
 import matplotlib
 import pandasai
-from pandasai import PandasAI
+from pandasai import llm 
 
 
 def app():
@@ -42,7 +42,7 @@ def app():
 
 
         llm = OpenAI(api_token=OPENAI_API_KEY)
-        pandas_ai = PandasAI(llm,save_charts_path="exports/charts/temp_chart.png")
+        pandas_ai = llm(llm,save_charts_path="exports/charts/temp_chart.png")
         result = pandas_ai.run(df, prompt=prompt)
         print("w hnaya" )
         print(result)
