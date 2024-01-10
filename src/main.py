@@ -8,7 +8,7 @@ import time
 from streamlit_option_menu import option_menu
 import pandasai
 import warnings
-from pandasai import PandasAI
+from pandasai import llm 
 warnings.simplefilter("ignore", UserWarning)
 
 
