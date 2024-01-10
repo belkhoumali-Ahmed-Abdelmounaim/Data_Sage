@@ -50,7 +50,7 @@ def app():
                              )
         print("w hnaya" )
         result2=dfsmart.chat(prompt)
-        print(result)
+        print(result2)
         #st.image(result.get('value'))
         return result2
 
