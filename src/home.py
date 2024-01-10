@@ -52,7 +52,7 @@ def app():
         result2=dfsmart.chat(prompt)
         print(result)
         #st.image(result.get('value'))
-        return result
+        return result2
 
     # Displaying a subheader and a custom welcome message
     st.subheader("Welcome User!")
