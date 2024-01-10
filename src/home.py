@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import matplotlib
 import pandasai
 from pandasai import llm 
-
+from pandasai import SmartDataframe
 
 def app():
     matplotlib.use('Agg')
@@ -42,9 +42,14 @@ def app():
 
 
         llm = OpenAI(api_token=OPENAI_API_KEY)
-        pandas_ai = llm(llm,save_charts_path="exports/charts/temp_chart.png")
-        result = pandas_ai.run(df, prompt=prompt)
+        #pandas_ai = llm(llm,save_charts_path="exports/charts/temp_chart.png")
+        #result = pandas_ai.run(df, prompt=prompt)
+        
+        dfsmart=SmartDataframe(df,config={"llm": llm,"save_charts": True,
+                        "save_charts_path": "exports/charts/temp_chart.png"}
+                             )
         print("w hnaya" )
+        result2=dfsmart.chat(prompt)
         print(result)
         #st.image(result.get('value'))
         return result
