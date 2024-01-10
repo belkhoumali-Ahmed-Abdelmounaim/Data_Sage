@@ -6,6 +6,7 @@ import openai
 import os
 import matplotlib.pyplot as plt
 import matplotlib
+import pandasai
 from pandasai import PandasAI
 
 
