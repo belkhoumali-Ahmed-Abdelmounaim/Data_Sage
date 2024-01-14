@@ -2,15 +2,13 @@
 
 Demo : 
 <div style="text-align: center;">
-  <!-- JavaScript loop to generate image tags -->
-  <script>
-    for (let i = 1; i <= 5; i++) {
-      document.write(`
-        <img src="${i}.png" alt="Alt text ${i}" title="Optional title ${i}" style="display: inline-block; margin: 0 10px; max-width: 300px;">
-      `);
-    }
-  </script>
+  <img src="1.png" alt="Alt text 1" title="Optional title 1" style="display: inline-block; margin: 0 10px; max-width: 300px;">
+  <img src="2.png" alt="Alt text 2" title="Optional title 2" style="display: inline-block; margin: 0 10px; max-width: 300px;">
+  <img src="3.png" alt="Alt text 3" title="Optional title 3" style="display: inline-block; margin: 0 10px; max-width: 300px;">
+  <img src="4.png" alt="Alt text 4" title="Optional title 4" style="display: inline-block; margin: 0 10px; max-width: 300px;">
+  <img src="5.png" alt="Alt text 5" title="Optional title 5" style="display: inline-block; margin: 0 10px; max-width: 300px;">
 </div>
+
 
 
 ## 🤔 What is DataSage?
