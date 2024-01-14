@@ -1,6 +1,17 @@
 # DataSage 🌐
 
-Welcome to DataSage, your go-to platform for unraveling the deep secrets lying in your CSV data with the power of Artificial Intelligence.
+Demo : 
+<div style="text-align: center;">
+  <!-- JavaScript loop to generate image tags -->
+  <script>
+    for (let i = 1; i <= 5; i++) {
+      document.write(`
+        <img src="${i}.png" alt="Alt text ${i}" title="Optional title ${i}" style="display: inline-block; margin: 0 10px; max-width: 300px;">
+      `);
+    }
+  </script>
+</div>
+
 
 ## 🤔 What is DataSage?
 
