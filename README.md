@@ -2,10 +2,10 @@
 
 Demo : 
 <div style="text-align: center;">
-  <img src="1.png" alt="Alt text 1" title="Optional title 1" style="display: inline-block; margin: 0 10px; max-width: 300px;">
-  <img src="2.JPG" alt="Alt text 2" title="Optional title 2" style="display: inline-block; margin: 0 10px; max-width: 300px;">
-  <img src="3.PNG" alt="Alt text 3" title="Optional title 3" style="display: inline-block; margin: 0 10px; max-width: 300px;">
-  <img src="4.png" alt="Alt text 4" title="Optional title 4" style="display: inline-block; margin: 0 10px; max-width: 300px;">
+  <img src="docs/1.png" alt="Alt text 1" title="Optional title 1" style="display: inline-block; margin: 0 10px; max-width: 300px;">
+  <img src="docs/2.JPG" alt="Alt text 2" title="Optional title 2" style="display: inline-block; margin: 0 10px; max-width: 300px;">
+  <img src="docs/3.PNG" alt="Alt text 3" title="Optional title 3" style="display: inline-block; margin: 0 10px; max-width: 300px;">
+  <img src="docs/4.png" alt="Alt text 4" title="Optional title 4" style="display: inline-block; margin: 0 10px; max-width: 300px;">
 </div>
 
 
