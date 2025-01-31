@@ -15,5 +15,6 @@ firebase_admin
 protobuf==3.20.0
 streamlit_option_menu
 sqlalchemy
+pandas
 numpy==1.26.4
 
