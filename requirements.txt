@@ -1,5 +1,5 @@
 # Upgrade pip
-numpy==1.26.4
+
 pandasai
 beautifulsoup4
 plotly
@@ -17,5 +17,5 @@ protobuf==3.20.0
 streamlit_option_menu
 sqlalchemy
 pandas
-
+numpy==1.26.4
 
