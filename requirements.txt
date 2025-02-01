@@ -19,5 +19,6 @@ deta==1.0.0  # Stable version for Deta integration
 firebase_admin==6.2.0  # Compatible with protobuf 3.20.0
 protobuf==3.20.0  # Explicitly specified to avoid conflicts
 
+numpy==1.26.3
 # AI/ML tools
 pandasai==2.0.17  # Ensure compatibility with pandas 2.0.3 and numpy 1.26.4
