@@ -44,10 +44,15 @@ def app():
         llm = OpenAI(api_token=OPENAI_API_KEY)
         #pandas_ai = llm(llm,save_charts_path="exports/charts/temp_chart.png")
         #result = pandas_ai.run(df, prompt=prompt)
-        
-        dfsmart=SmartDataframe(df,config={"llm": llm,"save_charts": True,
-                        "save_charts_path": "exports/charts/temp_chart.png"}
-                             )
+        os.makedirs("exports/charts", exist_ok=True)
+        dfsmart = SmartDataframe(
+            df,
+            config={
+                "llm": llm,
+                "save_charts": True,
+                "save_charts_path": "exports/charts"  # Use a directory instead of a file name
+            }
+        )
         print("w hnaya" )
         result2=dfsmart.chat(prompt)
         print(result2)
@@ -110,10 +115,16 @@ def app():
                             print(result)
                             if isinstance(result, pd.DataFrame):
                                 st.dataframe(result)
-                            elif isinstance(result, (str, int, float)): 
+                            elif isinstance(result, (int, float)):
                                 st.success(result)
-                            else : 
-                                st.image('exports/charts/temp_chart.png')
+                            elif isinstance(result, str):
+                                if result.endswith('.png') and os.path.exists(result):
+                                    st.image(result)
+                                else:
+                                    st.success(result)
+                            else:
+                                st.warning("Unexpected response type.")
+
 
                     else:
                         st.warning("Please enter a prompt.")
