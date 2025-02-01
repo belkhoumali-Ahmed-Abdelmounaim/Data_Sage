@@ -12,9 +12,12 @@ def app():
 
     # Apply styles
     st.markdown("""
-        <style>
-        [data-testid="stAppViewContainer"] > .main {
+    <style>
+        [data-testid="stAppViewContainer"] {
             background: linear-gradient(90deg, #212E53 30%, #4A919E 90%);
+            background-attachment: fixed;
+            background-size: cover;
+            min-height: 100vh;
         }
         .stTextInput > div > div > input {
             color: black !important;
