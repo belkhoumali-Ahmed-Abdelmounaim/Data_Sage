@@ -4,7 +4,6 @@ beautifulsoup4
 plotly
 # Other packages
 streamlit
-
 python-dotenv
 altair<5
 msal
