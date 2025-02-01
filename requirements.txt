@@ -1,5 +1,6 @@
-# Upgrade pip
+
 pandasai
+<<<<<<< HEAD
 beautifulsoup4
 plotly
 # Other packages
@@ -15,3 +16,5 @@ protobuf==3.20.0
 streamlit_option_menu
 sqlalchemy
 
+=======
+>>>>>>> e6d802260525d36bf361cae2fbc00f456a4dccd9
