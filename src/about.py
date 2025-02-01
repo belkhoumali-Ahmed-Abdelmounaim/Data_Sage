@@ -70,9 +70,8 @@ def app():
         """
         Stay updated with the latest features and updates. Follow us on our social media platforms:
 
-        - [GitHub](https://github.com/)
-        - [Twitter](https://twitter.com/)
-        - [LinkedIn](https://linkedin.com/)
+        - [GitHub](https://github.com/bmounim?tab=repositories)
+        - [LinkedIn](https://github.com/bmounim?tab=repositories)
         """
     )
 
