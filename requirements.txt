@@ -1,24 +1,24 @@
 # Core packages
 
 # Data processing and visualization
-beautifulsoup4==4.12.2  # Stable version for web scraping
-plotly==5.18.0  # Compatible with pandas and numpy
-altair==4.2.2  # Version <5 as requested, compatible with pandas
+beautifulsoup4
+plotly
+altair
 
 # Streamlit and related packages
-streamlit==1.28.0  # Stable version compatible with pandas and numpy
-streamlit_option_menu==0.3.6  # Compatible with streamlit 1.x
-streamlit-authenticator==0.2.3  # Compatible with streamlit 1.x
-msal==1.24.0  # Compatible with msal-streamlit-authentication
-msal-streamlit-authentication==0.1.0  # Compatible with streamlit 1.x
+streamlit
+streamlit_option_menu
+streamlit-authenticator
+msal
+msal-streamlit-authentication
 
 # Database and utilities
-sqlalchemy==2.0.23  # Compatible with pandas and numpy
-python-dotenv==1.0.0  # Stable version for environment variables
-deta==1.0.0  # Stable version for Deta integration
-firebase_admin==6.2.0  # Compatible with protobuf 3.20.0
-protobuf==3.20.0  # Explicitly specified to avoid conflicts
+sqlalchemy
+python-dotenv
+deta
+firebase_admin
+protobuf
 
-numpy==1.26.3
+numpy
 # AI/ML tools
-pandasai==1.5.21  # Ensure compatibility with pandas 2.0.3 and numpy 1.26.4
+pandasai
