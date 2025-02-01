@@ -1,24 +1,2 @@
-# Core packages
 
-# Data processing and visualization
-beautifulsoup4
-plotly
-altair
-
-# Streamlit and related packages
-streamlit
-streamlit_option_menu
-streamlit-authenticator
-msal
-msal-streamlit-authentication
-
-# Database and utilities
-sqlalchemy
-python-dotenv
-deta
-firebase_admin
-protobuf
-
-numpy
-# AI/ML tools
 pandasai
