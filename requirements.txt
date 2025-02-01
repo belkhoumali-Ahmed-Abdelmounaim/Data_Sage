@@ -1,6 +1,4 @@
 # Core packages
-pandas==2.0.3  # Stable version compatible with numpy 1.26.4
-numpy==1.26.4  # Explicitly specify this version for compatibility
 
 # Data processing and visualization
 beautifulsoup4==4.12.2  # Stable version for web scraping
