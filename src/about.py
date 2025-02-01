@@ -60,7 +60,7 @@ def app():
     st.header("📬 Contact Us")
     st.write(
         """
-        Have questions, suggestions, or feedback? We would love to hear from you. Reach out to us at [datasage@example.com](mailto:datasage@example.com).
+        Have questions, suggestions, or feedback? We would love to hear from you. Reach out to us at [pro.belkhoumali.mounaim@gmail.com](mailto:pro.belkhoumali.mounaim@gmail.com).
         """
     )
 
@@ -71,7 +71,7 @@ def app():
         Stay updated with the latest features and updates. Follow us on our social media platforms:
 
         - [GitHub](https://github.com/bmounim?tab=repositories)
-        - [LinkedIn](https://github.com/bmounim?tab=repositories)
+        - [LinkedIn](https://www.linkedin.com/in/belkhoumali/)
         """
     )
 
