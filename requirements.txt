@@ -21,4 +21,4 @@ protobuf==3.20.0  # Explicitly specified to avoid conflicts
 
 numpy==1.26.3
 # AI/ML tools
-pandasai==2.0.17  # Ensure compatibility with pandas 2.0.3 and numpy 1.26.4
+pandasai==1.5.21  # Ensure compatibility with pandas 2.0.3 and numpy 1.26.4
