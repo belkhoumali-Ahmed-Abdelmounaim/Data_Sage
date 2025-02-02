@@ -75,13 +75,6 @@ def app():
         """
     )
 
-    # Encourage users to start using DataSage
-    st.write(
-        """
-        Ready to explore your data? [Start using DataSage now!](#)
-        """
-    )
-
     # Footer
     st.write(
         """
